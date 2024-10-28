@@ -22,14 +22,14 @@ recognition.onresult = function(event)
   var content = event.results[0][0].transcript;
 
   document.getElementById("status").innerHTML = "A fala foi reconhecida como: " + content;
-  if(content = "circulo")
+  if(content == "círculo")
   {
    x = Math.floor(Math.random() * 900);
    y = Math.floor(Math.random() * 600);
    document.getElementById("status").innerHTML ="Desenhado um círculo.";
    drawCircle = "set"
   }
-  if(content = "retângulo")
+  if(content == "retângulo")
     {
      x = Math.floor(Math.random() * 900);
      y = Math.floor(Math.random() * 600);
